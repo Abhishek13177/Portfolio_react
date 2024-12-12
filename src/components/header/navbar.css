@@ -1,0 +1,188 @@
+/* General Navbar Styles */
+.nav-section
+{
+  z-index: 1;
+  position:sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  backdrop-filter: blur(5px);
+  background-color: var(--white_black);
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  padding: 0 1rem;
+  /* background-color: var(--body_background); */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  color: var(--black_color);
+}
+
+.darkmode {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; 
+  margin-right: 5rem;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  color: var(--grey_color);
+  
+}
+
+
+.nav-btn {
+  text-decoration: none;
+  color: var(--grey_color);
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-btn:hover {
+  color: var(--hover_colorblue);
+}
+
+/* Close button for overlay menu */
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  color: var(--black_color);
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: var(--hover_colorblue); 
+}
+
+
+/* Hamburger Button (visible on mobile and tablet) */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+
+/* Overlay Menu for Mobile/Tablet */
+.overlay-menu {
+  z-index: 10;
+  position: absolute;
+  top: 130%;
+  right: 9%;
+  width: 25vw;
+  height: auto;
+  backdrop-filter: blur(20px);
+  background-color: var(--white_black);
+  color: var(--black_color);
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--black_color);
+  /* Transition-related properties */
+  opacity: 0;
+  visibility: hidden; /* Prevent interaction when hidden */
+  transform: translateY(-20px); /* Slide up effect */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.overlay-menu.active {
+  display: flex;
+  opacity: 1;
+  visibility: visible; 
+  transform: translateY(0);
+}
+
+
+.overlay-menu a {
+  text-decoration: none;
+  color: var(--black_color);
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.overlay-menu a:hover {
+  color: var(--hover_colorblue);
+}
+
+/* Media Queries */
+
+@media (max-width: 480px) {
+  .nav-links {
+    display: none; /* Hide the nav links by default */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-brand {
+    font-size: 1.6rem;
+  }
+  .darkmode {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+    margin-right:1rem;
+    align-items: center;
+  }
+  .overlay-menu {
+    z-index: 10;
+    position: absolute;
+    top: 130%;
+    right: 9%;
+    width: 40%;
+    height: auto;
+    background-color: var(--white_black);
+    color: var(--black_color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 1rem;
+    z-index: 10;
+    border-radius: 10px;
+    border: 1px solid var(--black_color);    
+  }
+
+  .overlay-menu a {
+    text-decoration: none;
+    color: var(--black_color);
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+  
+}
+
+/* Tablet (601px to 900px) */
+@media (min-width: 481px) and (max-width: 900px) {
+  .nav-links {
+    display: none; 
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+}
+
+

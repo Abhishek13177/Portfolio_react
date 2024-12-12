@@ -1,0 +1,198 @@
+/* EDUCATION DETAILS STYLING */
+
+.experience-container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light_grey_bg);
+  padding: 4rem 6rem;
+  /* margin-top: 1rem; */
+  width:100%;
+}
+.exp-card-container
+{
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 7rem;
+}
+
+.experience-container>p
+{
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--grey_color);
+}
+
+.experience-container>h2
+{
+  font-size: 3rem;
+  margin: 0;
+}
+
+.exp-card-container
+{
+  margin-top: 1rem;
+  height:auto;
+  width: 70vw;
+  padding: 2rem;
+}
+
+.sub-card
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  width:100%;
+  padding: 1rem 1rem;
+  border: 1px solid var(--light_grey_border);
+  background-color:var(--light_grey_bg_lightgrey);
+  border-radius: 10px;
+  height: 65vh;
+}
+
+.subcard-container
+{
+  height: 50%;
+  width:100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  border-bottom:1px solid var(--light_grey_border);
+}
+
+.book-icon
+{
+  margin-top: 1rem;
+}
+
+.subcard-detail-box
+{
+  width: 90%;
+}
+.detail1
+{
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--black_color);
+}
+.detail2
+{
+  text-align: left;
+  font-size: 1.3rem;
+  color: var(--black_color);
+}
+.detail3
+{
+  text-align: left;
+  font-size: 1rem;
+  color: var(--grey_color);
+}
+.detail4
+{
+  text-align: left;
+  font-size: 1rem;
+  color: var(--grey_color);
+}
+
+
+/* EDUCATION SECTION MEDIA QUERY */
+/* Mobile devices (up to 480px) */
+@media (max-width: 480px) {
+  .experience-container {
+    padding: 2rem 0.8rem;
+    margin: 2rem;
+  }
+
+  .exp-card-container {
+    flex-direction: column;
+    width: 100%; /* Full width */
+  }
+
+  .sub-card {
+    width: 100%;
+    padding: 1.5rem; /* Less padding */
+    margin: 0;
+  }
+
+  .exp-card-container {
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .experience-container > h2 {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+  }
+
+  .experience-container > p {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .subcard-container {
+    gap: 1.5  rem;
+    width: auto;
+  }
+
+  .detail2
+  {
+    font-size: 1rem;
+  }
+}
+
+/* Tablet devices (481px to 900px) */
+@media (max-width: 900px) and (min-width: 481px) {
+  .experience-container {
+    padding: 3rem 4rem;
+  }
+
+  .exp-card-container {
+    flex-direction: column;
+    width: 90%; /* Take up more space */
+  }
+
+  .sub-card {
+    width: 75%; /* Full width */
+    height: auto;
+    padding: 2rem;
+  }
+
+  .exp-card-container {
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .experience-container > h2 {
+    font-size: 2.5rem;
+  }
+
+  .experience-container > p {
+    font-size: 1.3rem;
+  }
+
+  .subcard-container {
+    gap: 2rem;
+  }
+
+  .detail1
+  {
+    font-size: 1.3rem;
+  }
+  .detail2
+  {
+    font-size: 1.5rem;
+  }
+  .detail3,.detail4 
+  {
+    font-size: 1.2rem;
+  }
+}
