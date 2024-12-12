@@ -13,16 +13,16 @@ function Experience()
 
                         <ExperienceSubcard 
                         date="2022-2024" 
-                        clg="Graphic Era Hill University (Dehradun)"
+                        clg="Graphic Era University "
                         course="MCA"
                         cgpa="7.84 CGPA"        
                         />    
 
                         <ExperienceSubcard 
                         date="2018-2021" 
-                        clg="Himalayan Institute of Technology (Dehradun)"
+                        clg="Himalayan Institute of Technology"
                         course="BSC IT"
-                        cgpa="7.84 CGPA"    
+                        cgpa="7.5 CGPA"    
                         />   
                     
                     </div>
@@ -30,13 +30,13 @@ function Experience()
 
                         <ExperienceSubcard 
                         date="2017-2018" 
-                        clg="Scholars Home All India Sr. Sec & Residential School (Dehradun)"
+                        clg="Scholars Home "
                         course="Grade 12"
                         cgpa="70.16 %"    
                         />   
                         <ExperienceSubcard 
                         date="2015-2016" 
-                        clg="Scholars Home All India Sr. Sec & Residential School (Dehradun)"
+                        clg="Scholars Home"
                         course="Grade 10"
                         cgpa="7.6 CGPA"    
                         />   
