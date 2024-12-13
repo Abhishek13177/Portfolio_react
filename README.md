@@ -56,8 +56,17 @@ VS Code
 
 3)your project is up and running.
 
+
+
 **TABLET VIEW**
+
+
 ![Screenshot 2024-12-13 095405](https://github.com/user-attachments/assets/0e526b72-a85f-44b3-9bdb-772499a4e7f9)
 
+
+
 **DESKTOP VIEW**
+
+
+
 ![Screenshot 2024-12-12 135159](https://github.com/user-attachments/assets/c4f7205c-17b8-4f48-9ba9-1f9cf64b7403)
